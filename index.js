@@ -2,19 +2,11 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser')
 const http = require('http').Server(app);
-const io = require('socket.io')(http);
-const port = process.env.PORT || 80;
+const port = 80;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname + '/public'));
-
-io.on('connection', function(socket) {
-	console.log("connection");
-	socket.on('chat message', function(msg){
-		io.emit('chat message', msg);
-	});
-});
 
 http.listen(port, function() {
 	console.log('listening on *:' + port);

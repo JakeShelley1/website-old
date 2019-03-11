@@ -10,7 +10,7 @@ div {
 }
 
 .main {
-	margin: 150px 5%;
+	margin: 100px 5%;
 	max-width: 700px;
 	font-weight: 100;
 	line-height: 30px;
@@ -63,17 +63,19 @@ b:hover {
 	color: white !important;
 }
 
-b.medium  { color: #007000 }
-b.ibm     { color: #006699 }
-b.github  { color: #FF4F54 }
-b.twitch  { color: #6441a5 }
-b.twitter { color: #1DA1F2 }
+b.medium    { color: #007000 }
+b.ibm       { color: #006699 }
+b.github    { color: #FF4F54 }
+b.twitch    { color: #6441a5 }
+b.twitter   { color: #1DA1F2 }
+b.freewheel { color: #502174 }
 
-b.ibm:hover     { background-color: #006699 }
-b.medium:hover  { background-color: #007000 }
-b.github:hover  { background-color: #FF4F54 }
-b.twitch:hover  { background: #6441a5 }
-b.twitter:hover { background-color: #1DA1F2 }
+b.ibm:hover       { background-color: #006699 }
+b.medium:hover    { background-color: #007000 }
+b.github:hover    { background-color: #FF4F54 }
+b.twitch:hover    { background-color: #6441a5 }
+b.twitter:hover   { background-color: #1DA1F2 }
+b.freewheel:hover { background-color: #502174 }
 
 p {
 	font-family: 'Gothic A1', sans-serif;
